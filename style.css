@@ -1,0 +1,339 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.arrow-start {
+  position: fixed;
+  right: 1vw;
+  bottom: 6vh;
+  z-index: 1;
+}
+
+.arrow-start:hover {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px #8A2BE2, inset 0 0 100px #ffffff;
+  border-radius: 50%;
+  transform: translateY(-15%);
+}
+
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: fixed;
+  min-width: 100vw;
+  gap: 50px;
+  padding: 20px 50px 15px 0;
+  background: rgba(0, 0, 0, 0.69);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.nav-btn {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.nav-btn:hover {
+  text-shadow: 0 0 20px #8A2BE2	;
+  color: #8A2BE2	;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.nav-btn:active {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+
+.head-principal {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./assets/vitrine-de-produtos-com-fundo-de-sala-de-estudio-preto-em-destaque-como-montagem-para-exibicao-de-produtos.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.information-head {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 20%;
+}
+
+.social-media{
+  display: flex;
+  gap: .7rem;
+}
+.link-git{
+  height: max-content;
+  width: max-content;
+}
+
+.linkedinimg:hover, .githubImg:hover {
+  transform: translateY(-15%);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 30px #8A2BE2	, inset 0 0 100px #8A2BE2	;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.boasVindas {
+  color: white;
+  font-size: 25px;
+}
+
+.minhaFuncao {
+  text-align: center;
+  font-weight: bold;
+  color: #8A2BE2	;
+  text-shadow: 0 0 15px #8A2BE2	;
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-right: 4px solid;
+  width: 15ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(18), blinking 0.5s infinite step-end alternate ;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.meuNome {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.img-div {
+  position: absolute;
+  right: 15%;
+  bottom: 25%;
+  top: 25%;
+}
+
+.head-img {
+  width: 450px;
+  border-radius: 50%;
+}
+
+.about-me {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.my-prof {
+  width: 280px;
+  height: 250px;
+  box-shadow: 0 0 10px #8A2BE2	, 0 0 10px #8A2BE2	;
+  border-radius: 50%;
+}
+
+.myBio {
+  color: #000000;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.bioDesc {
+  font-size: 20px;
+  text-align: center;
+  width: 1100px;
+  padding-bottom: 20px;
+}
+
+.buttonCV {
+  border: 2px solid #8A2BE2	;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #8A2BE2	;
+  font-weight: bolder;
+}
+
+.buttonCV:hover {
+  background-color: #8A2BE2	;
+  box-shadow: 0 0 30px #8A2BE2	, inset 0 0 50px #8A2BE2	;
+  text-shadow: 0 0 15px #8A2BE2	;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.buttonCV:active{
+  background-color: #000000;
+  box-shadow: 0 0 50px #000000, inset 0 0 50px #000000;
+  text-shadow: 0 0 15px #000000;
+  color: #fff;
+  border: 2px solid white;
+  transform: scale(1.1);
+}
+
+.skills {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("./assets/vitrine-de-produtos-com-fundo-de-sala-de-estudio-preto-em-destaque-como-montagem-para-exibicao-de-produtos.jpg");
+}
+
+.mySkills {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.projetos {
+  display: flex;
+  height: 125vh;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.projects h3 {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.cliqueInImage {
+  color: #8A2BE2	;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.projects p {
+  text-align: center;
+  font-size: 20px;
+  color: #8A2BE2	;
+}
+
+.boxImages {
+  padding-top: 30px;
+  width: 50%;
+  display: flex;
+  height: 20px;
+  gap: 5px;
+}
+
+.projectImgs {
+  border: 5px solid #8A2BE2	(255, 0, 0);
+  filter: grayscale(100%);
+  width: 100px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all ease-out 0.5s;
+  cursor: pointer;
+}
+
+.textTopImage {
+  position: sticky;
+}
+
+.projectImgs:hover {
+  width: 800px;
+  filter: grayscale(0%);
+  box-shadow: 0 0 70px #8A2BE2	, inset 0 0 80px #8A2BE2	;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  padding-top: 150px;
+  background-image: url("./assets/vitrine-de-produtos-com-fundo-de-sala-de-estudio-preto-em-destaque-como-montagem-para-exibicao-de-produtos.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.contact h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #fff;
+}
+
+.contact h4 {
+  padding-top: 50px;
+  color: #8A2BE2	;
+  font-size: 30px
+}
+
+.info-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.paragraphContact {
+  font-size: 20px;
+  text-align: center;
+  width: 1100px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.mail, .phone {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.imgContactPhone, .imgContactEmail {
+  width: 50px;
+  padding-right: 10px;
+}
+
+.about-me, .skills, .projetos, .contact {
+  visibility: hidden;
+}
+
+.DivFoot {
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  background-color: #8A2BE2;    
+}
