@@ -153,10 +153,8 @@ html {
 }
 
 .my-prof {
-  width: 280px;
-  height: 250px;
-  box-shadow: 0 0 10px #8A2BE2	, 0 0 10px #8A2BE2	;
-  border-radius: 50%;
+  width: 270px;
+  height: 300px;
 }
 
 .myBio {
